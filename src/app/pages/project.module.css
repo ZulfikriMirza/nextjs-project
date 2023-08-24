@@ -1,0 +1,39 @@
+.Project{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0 0 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+.Project__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.Project__card{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: #e7fdfc;
+    box-shadow:  28px 28px 56px #768181,
+                 -28px -28px 56px #ffffff;
+    padding: 2rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.card h5{
+    margin-top: 1rem;
+}

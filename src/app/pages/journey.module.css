@@ -1,0 +1,195 @@
+.Journey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    gap: 50px;
+    height: fit-content;
+  }
+  
+  .Journey__title {
+    font-weight: 800;
+    font-size: 48px;
+    transition: 0.25s;
+    margin-top: 50px;
+    text-shadow: 5px 5px #bdbdbd;
+  }
+  
+  
+  .Journey__title:hover { 
+    transform: scale(1.1);
+    cursor: default;
+  }
+
+  .Experience__title{
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .Experience__title:hover {
+    transform: scale(1.1);
+    cursor: default;
+  }
+  
+  .timeline{
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    transition: 0.25s ease;
+    animation: dropIn 1s ease forwards;
+    animation-delay: calc(var(--order) * 100ms);
+  }
+
+  @keyframes dropIn{
+    from {transform: translateY(-500px);}
+    to {transform: translateY(0);}
+  }
+
+  .timeline ul {
+    list-style-type: none;
+  }
+
+  .timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px #666668;
+    transition: 0.25s ease;
+  }
+
+  .timeline ul li:hover{
+    box-shadow: 10px 10px #000000;
+    background-color: #3d3d3d;;
+
+  }
+  
+  
+  .timeline ul li:last-child {
+    margin-bottom: 50px;
+  }
+
+  .timeline__content h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  .timeline__content p {
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 300;
+
+  }
+
+  .timeline__content .date{
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: rgb(94, 94, 94);
+    transition: 0.25s ease;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  .Journey {
+    overflow: hidden;
+
+  }
+
+  .timeline:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+  }
+
+  .timeline ul li{
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .timeline ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(-50px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  
+  .timeline ul li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translateX(50px);
+    border-radius: 0px 20px 20px 20px;
+  }
+
+  .timeline ul li::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    top: 0;
+  }
+
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -50px;
+
+  }
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -50px;
+
+  }
+
+  .timeline ul li:hover:after {
+    background-color: aqua;
+  }
+
+  .timeline__content .date {
+    position: absolute;
+    top: -28px;
+  }
+
+  .PhotosButton{
+    position: relative;
+    left: 8rem;
+  }
+}
+
+@media only screen and (max-width: 847px) {
+  .Journey {
+    overflow: hidden;
+    height: fit-content;
+
+  }
+
+  .Journey__title {
+    margin-top: 40px;
+  }
+
+  .timeline__content .date{
+    color:   rgb(211, 211, 211);
+  }
+ 
+}
+

@@ -1,0 +1,54 @@
+.Profile{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(#9ff9ff, #fff);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Profile__content h1{
+    text-shadow: 4px 4px #707070;
+}
+
+.Profile__content p{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.contentContainer {
+  opacity: 1;
+  max-height: 200px; /* Set a reasonable maximum height */
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.showAboutMe {
+  opacity: 0;
+  max-height: 0;
+}
+
+.newInformation{
+    border: 10px solid #000;
+    border-radius: 25px;
+    background-color: #000;
+    color: #fff;
+    box-shadow:  3px 3px 3px #53827f,
+    -3px -3px 3px #929292;
+}
+
+.informationButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.newArticle{
+    text-align: center;
+    margin-bottom: 20px;
+}

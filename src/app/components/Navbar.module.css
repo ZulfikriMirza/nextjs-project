@@ -1,0 +1,92 @@
+/* components/Navbar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #9ff9ff;
+  color: #333;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+
+}
+
+.navButton{
+    display: flex;
+    gap: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.navButton li{
+    background-color: #9ff9ff;
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: 20px solid #fff;
+    color: #333;
+}
+
+.navLinks a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 600;
+}
+
+.navLinks a:hover {
+  color: #ff9900;
+}
+
+.note{
+  position: absolute;
+  font-size: 8px;
+  top: 8%;
+}
+
+.learning{
+  position: absolute;
+  left: 40%;
+  top: 8%;
+  font-size: 8px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 1rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+  }
+
+  .navLinks a {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
