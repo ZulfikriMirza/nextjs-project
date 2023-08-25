@@ -16,16 +16,23 @@ export default function Profile(){
             <div className={styles.Profile__content}>
                     {!aboutMe ? (
                         <>
-                            <h1 className='text-5xl font-extrabold'>Your Future Frontend Developer</h1>
-                            <p className='text-xs'>or husband?!</p>
+                            <div className={styles.title}>
+                                <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Your </h1>
+                                <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Future </h1>
+                                <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Frontend </h1>
+                                <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Developer </h1>
+                            </div>
+
+                            {/* <p className='text-xs'>or husband?!</p> */}
                         </>
                     ) : (
-
-                        <article className={`${styles.newArticle} text-xl font-bold`}>
-                            Highly motivated and diligent software engineer with a strong will to succeed <br />
-                            and a passion for continuous learning. Equipped with a genuine 
-                            curiosity for  <br />emerging technologies,I always eager to expand my knowledge base.
-                        </article>
+                        <>
+                            <div class="lines"></div>
+                            <article className={`${styles.newArticle} text-xl font-bold`}>
+                                Highly motivated and diligent software engineer with a strong will to succeed and a passion for continuous learning.Equipped with a genuine 
+                                curiosity for emerging technologies,I always eager to expand my knowledge base.
+                            </article>
+                        </>
                     )}
                     <div className={styles.informationButton}>
                         <button className={styles.newInformation} onClick={toggleAboutMe}>About me</button>

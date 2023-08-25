@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from './project.module.css'
 import Image from 'next/image'
 import study from '../assets/study.jpeg'
+import not from '../assets/not.png'
 
 export default function Project() {
     return (
@@ -11,39 +12,38 @@ export default function Project() {
                 <div className={`${styles.Project__card}`}>
 
                     <div className={`${styles.card}`}>
+                            <Image 
+                            src={not}
+                            width={180}
+                            height={200}
+                            alt='Card Project Image'/>
+                            <h5>Project 1</h5>
+                            <Link href="/">Source code</Link>
+                        </div>
+
+                    <div className={`${styles.card}`}>
                         <Image 
-                        src={study}
-                        width={200}
+                        src={not}
+                        width={180}
                         height={200}
                         alt='Card Project Image'/>
                         <h5>Project 1</h5>
-                        <p>Project asdasd check out the link below to checkk the source code of the project</p>
-                        <Link href="/">Click here</Link>
+                        <Link href="/">Source code</Link>
                     </div>
 
                     <div className={`${styles.card}`}>
                         <Image 
-                        src={study}
-                        width={200}
-                        height={200}
+                        src={not}
+                        width={180}
+                        height={100}
                         alt='Card Project Image'/>
                         <h5>Project 1</h5>
-                        <p>Project asdasd check out the link below to checkk the source code of the project</p>
-                        <Link href="/">Click here</Link>
-                    </div>
-
-                    <div className={`${styles.card}`}>
-                        <Image 
-                        src={study}
-                        width={200}
-                        height={200}
-                        alt='Card Project Image'/>
-                        <h5>Project 1</h5>
-                        <p>Project asdasd check out the link below to checkk the source code of the project</p>
-                        <Link href="/">Click here</Link>
+                        <Link href="/">Source code</Link>
                     </div>
                 </div>
-                <Link className={`${styles.Project__Link}`} href="/">Check More on my Github</Link>
+                <div className={`${styles.Project__Button}`}>
+                    <Link className={`${styles.Project__Link}`} href="/">Check More on my Github</Link>
+                </div>
             </div>
         </section>
     )
