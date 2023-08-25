@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import study from '../assets/study.jpeg'
 import himpunan from '../assets/himpunan.jpg'
-import PPI from '../assets/PPI.jpg'
+import PPI from '../assets/PPI.JPG'
 
 
 export default function Journey() {
