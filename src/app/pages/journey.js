@@ -16,7 +16,7 @@ export default function Journey() {
     }
 
     return(
-        <section className={styles.Journey}>
+        <section className={styles.Journey} id='journey'>
             <h1 className={`${styles.Journey__title} 2xl:text-8xl xl:text-4xl md:text-base`} data-aos="fade-down" data-aos-duration="1000">My Life Journey !</h1>
             <div className={`${styles.Journey__content} flex justify-center`}>
 
