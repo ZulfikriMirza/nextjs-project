@@ -235,3 +235,51 @@
   }
   
 }
+
+@media (max-width: 420px) {
+  .title, .note, .socialMedia{
+    margin-left: 3em;
+
+  }
+  .photos{
+    visibility: hidden;
+  }
+
+  .Profile__title{
+    font-size: 36px;
+
+  }
+
+  .newArticle{
+    font-size: 12px;
+    width: 370px;
+  }
+  .note{
+    width: 400;
+
+  }
+}
+
+@media (max-width: 380px) {
+  .title, .note, .socialMedia{
+    margin-left: 4em;
+
+  }
+  .photos{
+    visibility: hidden;
+  }
+
+  .Profile__title{
+    font-size: 36px;
+
+  }
+
+  .newArticle{
+    font-size: 12px;
+    width: 300px;
+  }
+  .note{
+    width: 400;
+
+  }
+}
