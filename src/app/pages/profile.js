@@ -29,8 +29,8 @@ export default function Profile(){
                             <div className={styles.aboutContent}>
                                 <div className={styles.note}>
                                     <article className={`${styles.newArticle} text-xl font-bold`}>
-                                        Highly motivated and diligent software engineer with a strong will to succeed and a passion for continuous learning.Equipped with a genuine  
-                                        curiosity for emerging technologies,I always eager to expand my knowledge base. 
+                                        Highly motivated and diligent software engineer with a strong will to succeed and a passion for continuous learning. Equipped with a genuine  
+                                        curiosity for emerging technologies, I always eager to expand my knowledge base. 
 
                                     </article>
                                     <ul>
