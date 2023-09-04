@@ -120,11 +120,15 @@
 @media (max-width: 768px) {
 
     .Project {
-        margin-top: 20rem;
+
     }
     .Project__card{
         display: grid;
         grid-template-columns: auto;
+    }
+
+    .Project__content {
+        margin-top: 40rem;
     }
 
 
