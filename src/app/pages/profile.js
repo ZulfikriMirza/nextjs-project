@@ -1,7 +1,7 @@
 'use client'
 
 import styles from './profile.module.css';
-import { useState } from 'react';
+import { useState } from 'react'; 
 
 export default function Profile(){
     const [aboutMe, setAboutMe] = useState(false);
@@ -16,10 +16,13 @@ export default function Profile(){
             <div className={styles.Profile__content}>
                     {!aboutMe ? (
                         <>
+
+                            {/* <div className={styles.Profile__title}>
+                                <h1 className='text-5xl font-extrabold'>Frontend Web Developer</h1>
+                            </div> */}
                             <div className={styles.title}>
-                                <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Your </h1>
-                                <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Future </h1>
                                 <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Frontend </h1>
+                                <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Web </h1>
                                 <h1 className={`${styles.Profile__title} text-5xl font-extrabold`}>Developer </h1>
                             </div>
 

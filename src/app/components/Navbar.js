@@ -18,10 +18,12 @@ const navButton = [
 
 export default function Navbar() {
     const [HideNavbar, setHideNavbar] = useState(false)
+    const [DarkMode, setDarkMode] = useState(false)
 
     const toggleNavbar = () => {
         setHideNavbar(!HideNavbar)
     }
+
     return (
         <nav className={styles.navbar}>
             <p className={styles.note}>If you click my name, the navbar will shown<br />(although the navbar is useless lol)</p>

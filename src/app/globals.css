@@ -6,7 +6,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --dark-mode-background: linear-gradient(#006970, #fff);
+  --light-mode-background: linear-gradient(#9ff9ff, #fff);
+  --dark-background: #006970;
+  --light-background: #9ff9ff;
+  --background-transition-duration: 0.3s;
+  --background-transition-timing: ease;
   cursor: default;
+}
+
+.Body {
+  background: var(--light-mode-background);
+  transition: background var(--background-transition-duration) var(--background-transition-timing);
 }
 
 @media (prefers-color-scheme: dark) {
