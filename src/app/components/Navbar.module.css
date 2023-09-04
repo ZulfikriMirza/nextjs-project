@@ -4,7 +4,7 @@
   top: 2rem;
   height: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
   width: 100%;
   gap: 50rem;
@@ -78,7 +78,7 @@
 /* Media query for responsive design */
 @media (max-width: 480px) {
   .navbar {
-    align-items: start;
+    justify-content: center;
   }
 
   .navLinks {
