@@ -13,6 +13,9 @@
   --background-transition-duration: 0.3s;
   --background-transition-timing: ease;
   cursor: default;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Merriweather', serif;
+  scroll-behavior: smooth;
 }
 
 .Body {

@@ -6,9 +6,9 @@ import not from '../assets/not.png'
 
 export default function Project() {
     return (
-        <section className={styles.Project}>
+        <section className={styles.Project} id='project'>
             <div className={styles.Project__content}>
-                <h1 className={`${styles.Project__title} text-4xl font-extrabold`}>Last Current Project that i've been work on</h1>
+                <h1 className={`${styles.Project__title} text-4xl font-extrabold`}>Project</h1>
                 <div className={`${styles.Project__card}`}>
 
                     <div className={`${styles.card}`}>

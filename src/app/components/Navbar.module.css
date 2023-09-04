@@ -1,11 +1,15 @@
 /* components/Navbar.module.css */
 .navbar {
+  position: fixed;
+  top: 2rem;
+  height: 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #9ff9ff;
-  color: #333;
+  justify-content: space-around;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+  width: 100%;
+  gap: 50rem;
+  z-index: 999;
+
 }
 
 .logo a {
@@ -18,6 +22,7 @@
 .navLinks {
   display: flex;
   gap: 2rem;
+  margin-left: 10rem;
 
 }
 
@@ -51,6 +56,12 @@
   color: #ff9900;
 }
 
+.highlighted{
+  background-color: #9ff9ff;
+  border: 5px solid #9ff9ff;
+  border-radius: 20px;
+  padding: 5px;
+}
 .note{
   position: absolute;
   font-size: 8px;

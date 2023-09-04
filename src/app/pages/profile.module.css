@@ -5,10 +5,10 @@
     overflow: hidden;
     background: linear-gradient(#9ff9ff, #fff);
     height: 100vh;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    z-index: -1;
+    
 }
 
 
@@ -34,18 +34,7 @@
     text-shadow: none;
 
 }
-/* 
-.Profile__title h1{
-    animation: typing 2.5s steps(10)
-    infinite alternate-reverse;
-}
-
-@keyframes typing{
-    from{ width: 0ch;}
-    to{ width: 25ch;}
-} */
-
-.Profile__content h1{
+.Profile__content h5{
     text-shadow: 4px 4px #707070;
 }
 
@@ -96,5 +85,117 @@
     padding: 0 !important;
     width: 500px;
     font-family: courier, monospace;
+
 }
 
+.aboutContent ul{
+    margin-top: 1rem;
+    font-family: courier, monospace;
+    color: #555;
+    font-weight: 500;
+}
+
+.socialMedia{
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+.socialMedia li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    background-color: #e0fbff;
+    border-radius: 10px;
+    width: 65px;
+    height: 65px;
+    transition: transform 300ms;
+}
+
+.socialMedia li:nth-child(1):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      30deg,
+      #ffffff,
+      rgb(90, 90, 90)
+
+    );
+    border-radius: 5px;
+    z-index: -1;
+    transform: scaleX(0%);
+    transition: transform 300ms;
+    transform-origin: right;
+
+  }
+
+  .socialMedia li:nth-child(2):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      30deg,
+      rgb(248, 255, 157),
+      #ff9f9f,
+      rgb(213, 161, 255)
+    );
+    border-radius: 5px;
+    z-index: -1;
+    transform: scaleX(0%);
+    transition: transform 300ms;
+    transform-origin: right;
+
+  }
+
+.socialMedia li:nth-child(3):before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      30deg,
+      rgb(173, 247, 242),
+      rgb(21, 170, 255)
+    );
+    border-radius: 5px;
+    z-index: -1;
+    transform: scaleX(0%);
+    transition: transform 300ms;
+    transform-origin: right;
+
+  }
+
+  .socialMedia li:hover::before{
+    transform: scaleX(100%);
+    transform-origin: left;
+  }
+
+.socialMedia li:hover{
+    background-color: #fff;
+    transform: scale(1.2);
+}
+
+.aboutContent{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 2rem;
+    align-items: start;
+    text-align: justify;
+}
+
+.photos{
+    box-shadow: 10px 10px #000;
+}
