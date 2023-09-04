@@ -114,3 +114,18 @@
     transform: scale(1.1);
     cursor: pointer;
 }
+
+
+
+@media (max-width: 768px) {
+
+    .Project {
+        margin-top: 20rem;
+    }
+    .Project__card{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
+}

@@ -199,3 +199,39 @@
 .photos{
     box-shadow: 10px 10px #000;
 }
+
+@media (max-width: 768px) {
+  .title, .note, .socialMedia{
+    margin-left: 2rem;
+  }
+
+  .note{
+    width: 400;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .title, .note, .socialMedia{
+    margin-left: 2em;
+
+  }
+  .photos{
+    visibility: hidden;
+  }
+
+  .Profile__title{
+    font-size: 36px;
+
+  }
+
+  .newArticle{
+    font-size: 12px;
+    width: 380px;
+  }
+  .note{
+    width: 400;
+
+  }
+  
+}

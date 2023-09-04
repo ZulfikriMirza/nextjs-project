@@ -73,6 +73,38 @@
     transition: color 300ms;
   }
   
+
+
+  .timeline__content h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  .timeline__content p {
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 300;
+
+  }
+
+  .timeline__content .date{
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    transition: 0.25s ease;
+  }
+
+
+@media only screen and (min-width: 768px) {
+  .Journey {
+    overflow: hidden;
+
+  }
   .timeline ul li::before {
     content: "";
     position: absolute;
@@ -117,38 +149,6 @@
   .timeline ul li:nth-child(even)::before{
     border-radius: 0 5% 5% 5%;
   }
-
-  .timeline__content h1{
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 30px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-  }
-
-  .timeline__content p {
-    font-size: 12px;
-    line-height: 30px;
-    font-weight: 300;
-
-  }
-
-  .timeline__content .date{
-    font-size: 10px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    color: rgb(0, 0, 0);
-    transition: 0.25s ease;
-  }
-
-
-@media only screen and (min-width: 768px) {
-  .Journey {
-    overflow: hidden;
-
-  }
-
   .timeline:before{
     content: '';
     position: absolute;
@@ -222,6 +222,7 @@
 
   }
 
+
   .Journey__title {
     margin-top: 40px;
   }
@@ -230,5 +231,13 @@
     color:   rgb(211, 211, 211);
   }
  
+  .timeline ul li{
+    margin-bottom: 3rem;
+    transition: 300ms ease;
+  }
+
+  .timeline ul li:hover{
+    transform: scale(1.1);
+  }
 }
 
