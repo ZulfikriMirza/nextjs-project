@@ -15,7 +15,7 @@ const inter = Inter ({
 export default function Home() {
   return (
       <div className={`${inter.variable} ${styles.Body}`}>
-        <Navbar />
+
         <Profile />
         <Journey />
         <Project /> 
