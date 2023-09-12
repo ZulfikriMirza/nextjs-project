@@ -14,7 +14,7 @@
   --background-transition-timing: ease;
   cursor: default;
   font-family: 'Libre Baskerville', serif;
-  font-family: 'Merriweather', serif;
+  /* font-family: 'Merriweather', serif; */
   scroll-behavior: smooth;
 }
 
