@@ -98,7 +98,20 @@
     color: rgb(0, 0, 0);
     transition: 0.25s ease;
   }
+  .ContentToggle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #000;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #000;
+    transition: all 300ms;
+  }
 
+  .ToggleText{
+    margin: 0.5rem;
+  }
 
 @media only screen and (min-width: 768px) {
   .Journey {
