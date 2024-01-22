@@ -5,6 +5,7 @@ import Journey from './pages/journey'
 import { Inter } from 'next/font/google'
 import Project from './pages/project'
 import styles from '../app/globals.css'
+import Skills from './pages/skills'
 
 const inter = Inter ({
   subsets: ['latin'],
@@ -19,7 +20,8 @@ export default function Home() {
         <Profile />
         <Journey />
         <Project /> 
-    </div>
+        <Skills />
+      </div>
 
   )
 }

@@ -119,9 +119,6 @@
 
 @media (max-width: 768px) {
 
-    .Project {
-
-    }
     .Project__card{
         display: grid;
         grid-template-columns: auto;
